@@ -1,0 +1,239 @@
+#top_container {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    max-width: 900px;
+    min-width: 900px;
+}
+#content_container,
+#gallery_container {
+    width: 848px;
+    height: 100%;
+    position: relative;
+    border: 2px solid rgba(0, 82, 16, .2);
+    padding: 12px;
+    margin: 12px;
+}
+#invitation_container,
+#calendar_container,
+#contact_container {
+    width: 848px;
+    height: 100%;
+    position: relative;
+    padding: 12px;
+    margin: 12px;
+}
+#top_announcement,
+#top_slideshow,
+#top_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    font-family: "Dancing Script", "Hi Melody";
+    font-size: 50px;
+    font-weight: 800;
+    vertical-align: middle;
+}
+/*#top_image {*/
+/*    background-image: url('../gallery/900w/IMG_1529.jpg');*/
+/*    background-size: cover;*/
+/*}*/
+#top_slideshow > div{
+    position: absolute;
+}
+#top_slideshow div img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#top_announcement {
+    z-index: 10;
+}
+#top_anouncement div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+#top_announcement h2,
+#top_announcement h4 {
+    color: #c3c3c3;
+    margin-top: 0;
+    font-size: 1em;
+    line-height: 1em;
+    text-shadow: -0.5px 0 black, 0 0.5px #005210, 0.5px 0 #005210, 0 -0.5px #005210;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    text-align: center;
+}
+#top_announcement h4 {
+    padding-bottom: 0.7em;
+}
+
+#countdown {
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#countdown ul {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#countdown ul li {
+    display: inline-flex;
+    font-size: 0.7em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 4rem;
+}
+
+#countdown ul li h2,
+#countdown ul li h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1em;
+    color: white;
+    margin-top: 0;
+    line-height: 1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+
+.announcement h3,
+.announcement h4,
+.announcement h5,
+.announcement h6 {
+    font-family: "Nanum Gothic";
+    margin-block-start: 0.7em;
+    margin-block-end: 0.1em;
+}
+.announcement h2 {
+    font-family: "Hi Melody";
+    text-align: center;
+    color: #005210;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.5em;
+}
+
+.announcement p {
+    font-family: "Hi Melody";
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+}
+.announcement hr {
+    color: #005210;
+    opacity: 0.7;
+}
+.announcement p span {
+    display: inline-block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.1em;
+}
+
+.inline_block {
+    display: inline-block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.2em;
+}
+
+.g_announcement h4,
+.g_announcement h5,
+.g_announcement h6 {
+    font-family: "Nanum Gothic";
+    margin-block-start: 0.7em;
+    margin-block-end: 0.1em;
+}
+.g_announcement h2 {
+    font-family: "Hi Melody";
+    text-align: center;
+    color: #005210;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.5em;
+}
+
+.g_announcement p {
+    font-family: "Nanum Gothic";
+    text-align: center;
+    font-size: 45px;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+}
+.g_announcement hr {
+    color: #005210;
+    opacity: 0.7;
+}
+.g_announcement p span {
+    display: inline-block;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.4em;
+    opacity: 0.7;
+}
+
+.g_announcement p img {
+    vertical-align: middle;
+}
+
+.dancing_script {
+    font-family: 'Dancing Script';
+}
+
+.point_color {
+    color: #005210;
+}
+
+.blur {
+    filter: blur(1px);
+    opacity: 0.7;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'one two'
+    'three four'
+    'five six'
+    'footer footer';
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+}
+
+.grid-header { grid-area: header; }
+.grid-1 { grid-area: one; }
+.grid-2 { grid-area: two; }
+.grid-3 { grid-area: three; }
+.grid-4 { grid-area: four; }
+.grid-5 { grid-area: five; }
+.grid-6 { grid-area: six; }
+.grid-6 h2 {
+
+}
+.grid-footer { grid-area: footer; }
+
+h2 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 1.7em;
+}
+h5 {
+    font-size: 1.2em;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
